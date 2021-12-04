@@ -3,6 +3,9 @@
 ========================================================= */
 
 /* 0: Voorbeeld: maak de achtergrondkleur van de pagina wit */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+
 
 body {
     background-color: #FFFFFF;
@@ -48,15 +51,20 @@ main a:hover {
 
 
 /* Verander de achtergrond van de SignUp button. Tip: https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors  */
-input[value="signup" i] {
+input[type=submit] {
     background-color: hsl(110, 29%, 52%);
 }
 
 
 /* Geef het tekst-veld een blauwe rand wanneer hij in focus is */
-
-
+.subscribe input:focus{
+    outline: none !important;
+    border-color: blue;
+}
 
 /* Target alle heading tags op de pagina en zet hun font-family op 'Noto Sans JP', sans-serif */
 
 
+h1,h3 {
+    font-family: 'Noto Sans JP', sans-serif;
+}
